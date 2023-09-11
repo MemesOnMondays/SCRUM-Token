@@ -43,7 +43,7 @@ contract Scrum is ERC20, Ownable {
     address[] public path;
     address public team;
     uint immutable taxRate = 100; // basis points = 1%
-    uint immutable maxSupply = 1 * 10 ** decimals();
+    uint immutable maxSupply = 1_000_000_000 * 10 ** decimals();
     bool inTransfer = false;
 
     /**
@@ -84,8 +84,8 @@ contract Scrum is ERC20, Ownable {
     }
 
     /**
-     * @dev external function to trade tokens for weth and send
-     * to team wallet.
+     * @dev external function to trade tax tokens for weth and
+     * send to team wallet. Permissionless, anyone can call
      */
     function returnTax() external {
         uint tokenAmount = balanceOf(address(this));
