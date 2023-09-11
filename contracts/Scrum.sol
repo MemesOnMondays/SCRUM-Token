@@ -1,6 +1,22 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.21;
 
+/**
+ * @title SCRUM
+ * @author memesonmondays.eth
+ *
+ *   ──────▄▄██▓████▓██▄▄
+ *   ────▄███╳█▓█╳╳█▓█╳███▄
+ *   ───████╳╳█▓█╳╳█▓█╳╳████
+ *   ───████╳╳█▓█╳╳█▓█╳╳████
+ *   ────▀███╳█▓█╳╳█▓█╳███▀
+ *   ──────▀▀██▓████▓██▀▀
+ *
+ *     https://scrumtoken.xyz
+ *   https://MemesOnMondays.com
+ *  https://x.com/memesonmondays
+ */
+
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
